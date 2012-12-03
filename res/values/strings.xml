@@ -4,5 +4,9 @@
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
     <string name="title_activity_main">MainActivity</string>
+    
+    <!-- app id obtained from the facebook deveopers site
+    		we will need to use the app id for CNO -->
+    <string name="app_id">282049228564540</string>
 
 </resources>
