@@ -7,6 +7,7 @@ import android.widget.TextView;
 
 //instead of android.app.Activity, facebook uses:
 import com.facebook.FacebookActivity;
+import com.facebook.ProfilePictureView;
 //to allow sessions (login) with facebook:
 import com.facebook.SessionState;
 import com.facebook.GraphUser;
@@ -14,8 +15,11 @@ import com.facebook.Request;
 import com.facebook.Response;
 
 
-public class MainActivity extends FacebookActivity { 
-									//notice parent class, FacebookActivity
+public class MainActivity extends FacebookActivity { //notice parent class, FacebookActivity
+	
+	//private ProfilePictureView profilePictureView;
+	//private TextView userNameView;
+									
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,8 +49,8 @@ public class MainActivity extends FacebookActivity {
 		        @Override
 		        public void onCompleted(GraphUser user, Response response) {
 		          if (user != null) {
-		            TextView welcome = (TextView) findViewById(R.id.welcome);
-		            welcome.setText("Hello " + user.getName() + "!");
+		           // TextView welcome = (TextView) findViewById(R.id.welcome);
+		           // welcome.setText("Hello " + user.getName() + "!");
 		          }
 		        }
 		      }
